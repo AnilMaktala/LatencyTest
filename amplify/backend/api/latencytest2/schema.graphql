@@ -1,0 +1,130 @@
+type YepicPlace @model @searchable @auth(rules: [{ allow: owner , identityClaim: "username",ownerField: "user_id" },{ allow: private, provider: iam }]) {
+  id: ID!
+  user_id: String @index(name: "placeByUser")
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  placeName: String
+  formattedAddress: String!
+  latitude: Float!
+  longitude: Float!
+  uprn: String
+}
+
+
+
+type Yepic @model @auth(rules: [{ allow: owner , identityClaim: "username",ownerField: "user_id" },{ allow: private, provider: iam }]) {
+  id: ID!
+  user_id: String @index(name: "yepicByUser")
+  title: String
+  notes: [Note] @hasMany(indexName: "byNotes", fields: ["id"])
+  task : [Task] @hasMany(indexName: "byType", fields: ["id"])
+  start: AWSDateTime!
+  end: AWSDateTime
+  autoUpdate :Boolean  @default(value: "true")
+  imageIds: [String!]
+  images:[Image] @hasMany(indexName: "byImages", fields: ["id"])
+  placeID: ID
+  place: YepicPlace @hasOne(fields: ["placeID"])
+  visit: [YepicVisit] @hasMany(indexName: "byYepicVisit", fields: ["id"])
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+  albumCover: String
+}
+
+
+type ImageLocation {
+  id: ID!
+  latitude : Float
+  longitude :Float
+}
+
+
+type Image  @model @auth(rules: [{ allow: owner, identityClaim: "username" ,ownerField: "user_id" },{ allow: private, provider: iam }]) {
+  id: ID!
+  title: String
+
+  path :String!
+  imageHashID : String
+  yepicID: ID! @index(name: "byImages")
+  yepic: Yepic! @belongsTo(fields: ["yepicID"])
+  user_id: String @index(name: "imagesByUser")
+  notes: [ImageNote] @hasMany(indexName: "byImageNotes", fields: ["id"])
+  exif: AWSJSON
+  imageCreatedAt: AWSDateTime!
+  location: ImageLocation!
+
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+}
+type ImageNote  @model @auth(rules: [{ allow: owner, identityClaim: "username" ,ownerField: "user_id" },{ allow: private, provider: iam }]) {
+  id: ID!
+  notes :String!
+  imageID: ID! @index(name: "byImageNotes")
+  image: Image! @belongsTo(fields: ["imageID"])
+
+  user_id: String @index(name: "imageNotesByUser")
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+}
+
+type YepicVisit @model @auth(rules: [{ allow: owner, identityClaim: "username" ,ownerField: "user_id" },{ allow: private, provider: iam }]) {
+  id: ID!
+  yepicID: ID! @index(name: "byYepicVisit")
+  yepic: Yepic! @belongsTo(fields: ["yepicID"])
+  arrive: AWSDateTime
+  leave: AWSDateTime
+  start: AWSDateTime!
+  end: AWSDateTime!
+  notes: [VisitNote] @hasMany(indexName: "byVisitNotes", fields: ["id"])
+  duration: Int
+  user_id: String @index(name: "yepicVisitByUser")
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+}
+type VisitNote  @model @auth(rules: [{ allow: owner, identityClaim: "username" ,ownerField: "user_id" },{ allow: private, provider: iam }]) {
+  id: ID!
+  notes :String!
+  visitID: ID! @index(name: "byVisitNotes")
+  visit: YepicVisit! @belongsTo(fields: ["visitID"])
+
+  user_id: String @index(name: "visitNotesByUser")
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+}
+
+
+type Note  @model @auth(rules: [{ allow: owner, identityClaim: "username" ,ownerField: "user_id" },{ allow: private, provider: iam }]) {
+  id: ID!
+  notes :String!
+  yepicID: ID! @index(name: "byNotes")
+  yepic: Yepic! @belongsTo(fields: ["yepicID"])
+  user_id: String @index(name: "notesByUser")
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+}
+
+type Task @model @auth(rules: [{ allow: owner, identityClaim:"username",ownerField: "user_id"  },{ allow: private, provider: iam }]) {
+  id: ID!
+  description :String
+  status :Boolean
+
+  yepicID: ID! @index(name: "byType")
+  yepic: Yepic! @belongsTo(fields: ["yepicID"])
+  notes: [TaskNote] @hasMany(indexName: "byTaskNotes", fields: ["id"])
+  user_id: String @index(name: "taskByUser")
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+
+
+}
+
+type TaskNote  @model @auth(rules: [{ allow: owner, identityClaim: "username" ,ownerField: "user_id" },{ allow: private, provider: iam }]) {
+  id: ID!
+  notes :String!
+  taskID: ID! @index(name: "byTaskNotes")
+  task: Task! @belongsTo(fields: ["taskID"])
+
+  user_id: String @index(name: "taskNotesByUser")
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+}

@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "latencytest2",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authlatencytest25b343474",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

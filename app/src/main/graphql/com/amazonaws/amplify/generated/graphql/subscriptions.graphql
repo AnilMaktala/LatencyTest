@@ -1,0 +1,1756 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateYepicPlace(
+  $filter: ModelSubscriptionYepicPlaceFilterInput
+  $user_id: String
+) {
+  onCreateYepicPlace(filter: $filter, user_id: $user_id) {
+    id
+    user_id
+    createdAt
+    updatedAt
+    placeName
+    formattedAddress
+    latitude
+    longitude
+    uprn
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateYepicPlace(
+  $filter: ModelSubscriptionYepicPlaceFilterInput
+  $user_id: String
+) {
+  onUpdateYepicPlace(filter: $filter, user_id: $user_id) {
+    id
+    user_id
+    createdAt
+    updatedAt
+    placeName
+    formattedAddress
+    latitude
+    longitude
+    uprn
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteYepicPlace(
+  $filter: ModelSubscriptionYepicPlaceFilterInput
+  $user_id: String
+) {
+  onDeleteYepicPlace(filter: $filter, user_id: $user_id) {
+    id
+    user_id
+    createdAt
+    updatedAt
+    placeName
+    formattedAddress
+    latitude
+    longitude
+    uprn
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateYepic(
+  $filter: ModelSubscriptionYepicFilterInput
+  $user_id: String
+) {
+  onCreateYepic(filter: $filter, user_id: $user_id) {
+    id
+    user_id
+    title
+    notes {
+      items {
+        id
+        notes
+        yepicID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    task {
+      items {
+        id
+        description
+        status
+        yepicID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    start
+    end
+    autoUpdate
+    imageIds
+    images {
+      items {
+        id
+        title
+        path
+        imageHashID
+        yepicID
+        user_id
+        exif
+        imageCreatedAt
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    placeID
+    place {
+      id
+      user_id
+      createdAt
+      updatedAt
+      placeName
+      formattedAddress
+      latitude
+      longitude
+      uprn
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    visit {
+      items {
+        id
+        yepicID
+        arrive
+        leave
+        start
+        end
+        duration
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    albumCover
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateYepic(
+  $filter: ModelSubscriptionYepicFilterInput
+  $user_id: String
+) {
+  onUpdateYepic(filter: $filter, user_id: $user_id) {
+    id
+    user_id
+    title
+    notes {
+      items {
+        id
+        notes
+        yepicID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    task {
+      items {
+        id
+        description
+        status
+        yepicID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    start
+    end
+    autoUpdate
+    imageIds
+    images {
+      items {
+        id
+        title
+        path
+        imageHashID
+        yepicID
+        user_id
+        exif
+        imageCreatedAt
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    placeID
+    place {
+      id
+      user_id
+      createdAt
+      updatedAt
+      placeName
+      formattedAddress
+      latitude
+      longitude
+      uprn
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    visit {
+      items {
+        id
+        yepicID
+        arrive
+        leave
+        start
+        end
+        duration
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    albumCover
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteYepic(
+  $filter: ModelSubscriptionYepicFilterInput
+  $user_id: String
+) {
+  onDeleteYepic(filter: $filter, user_id: $user_id) {
+    id
+    user_id
+    title
+    notes {
+      items {
+        id
+        notes
+        yepicID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    task {
+      items {
+        id
+        description
+        status
+        yepicID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    start
+    end
+    autoUpdate
+    imageIds
+    images {
+      items {
+        id
+        title
+        path
+        imageHashID
+        yepicID
+        user_id
+        exif
+        imageCreatedAt
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    placeID
+    place {
+      id
+      user_id
+      createdAt
+      updatedAt
+      placeName
+      formattedAddress
+      latitude
+      longitude
+      uprn
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    visit {
+      items {
+        id
+        yepicID
+        arrive
+        leave
+        start
+        end
+        duration
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    albumCover
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateImage(
+  $filter: ModelSubscriptionImageFilterInput
+  $user_id: String
+) {
+  onCreateImage(filter: $filter, user_id: $user_id) {
+    id
+    title
+    path
+    imageHashID
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    notes {
+      items {
+        id
+        notes
+        imageID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    exif
+    imageCreatedAt
+    location {
+      id
+      latitude
+      longitude
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateImage(
+  $filter: ModelSubscriptionImageFilterInput
+  $user_id: String
+) {
+  onUpdateImage(filter: $filter, user_id: $user_id) {
+    id
+    title
+    path
+    imageHashID
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    notes {
+      items {
+        id
+        notes
+        imageID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    exif
+    imageCreatedAt
+    location {
+      id
+      latitude
+      longitude
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteImage(
+  $filter: ModelSubscriptionImageFilterInput
+  $user_id: String
+) {
+  onDeleteImage(filter: $filter, user_id: $user_id) {
+    id
+    title
+    path
+    imageHashID
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    notes {
+      items {
+        id
+        notes
+        imageID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    exif
+    imageCreatedAt
+    location {
+      id
+      latitude
+      longitude
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateImageNote(
+  $filter: ModelSubscriptionImageNoteFilterInput
+  $user_id: String
+) {
+  onCreateImageNote(filter: $filter, user_id: $user_id) {
+    id
+    notes
+    imageID
+    image {
+      id
+      title
+      path
+      imageHashID
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      user_id
+      notes {
+        nextToken
+        startedAt
+      }
+      exif
+      imageCreatedAt
+      location {
+        id
+        latitude
+        longitude
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateImageNote(
+  $filter: ModelSubscriptionImageNoteFilterInput
+  $user_id: String
+) {
+  onUpdateImageNote(filter: $filter, user_id: $user_id) {
+    id
+    notes
+    imageID
+    image {
+      id
+      title
+      path
+      imageHashID
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      user_id
+      notes {
+        nextToken
+        startedAt
+      }
+      exif
+      imageCreatedAt
+      location {
+        id
+        latitude
+        longitude
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteImageNote(
+  $filter: ModelSubscriptionImageNoteFilterInput
+  $user_id: String
+) {
+  onDeleteImageNote(filter: $filter, user_id: $user_id) {
+    id
+    notes
+    imageID
+    image {
+      id
+      title
+      path
+      imageHashID
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      user_id
+      notes {
+        nextToken
+        startedAt
+      }
+      exif
+      imageCreatedAt
+      location {
+        id
+        latitude
+        longitude
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateYepicVisit(
+  $filter: ModelSubscriptionYepicVisitFilterInput
+  $user_id: String
+) {
+  onCreateYepicVisit(filter: $filter, user_id: $user_id) {
+    id
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    arrive
+    leave
+    start
+    end
+    notes {
+      items {
+        id
+        notes
+        visitID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    duration
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateYepicVisit(
+  $filter: ModelSubscriptionYepicVisitFilterInput
+  $user_id: String
+) {
+  onUpdateYepicVisit(filter: $filter, user_id: $user_id) {
+    id
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    arrive
+    leave
+    start
+    end
+    notes {
+      items {
+        id
+        notes
+        visitID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    duration
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteYepicVisit(
+  $filter: ModelSubscriptionYepicVisitFilterInput
+  $user_id: String
+) {
+  onDeleteYepicVisit(filter: $filter, user_id: $user_id) {
+    id
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    arrive
+    leave
+    start
+    end
+    notes {
+      items {
+        id
+        notes
+        visitID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    duration
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateVisitNote(
+  $filter: ModelSubscriptionVisitNoteFilterInput
+  $user_id: String
+) {
+  onCreateVisitNote(filter: $filter, user_id: $user_id) {
+    id
+    notes
+    visitID
+    visit {
+      id
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      arrive
+      leave
+      start
+      end
+      notes {
+        nextToken
+        startedAt
+      }
+      duration
+      user_id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateVisitNote(
+  $filter: ModelSubscriptionVisitNoteFilterInput
+  $user_id: String
+) {
+  onUpdateVisitNote(filter: $filter, user_id: $user_id) {
+    id
+    notes
+    visitID
+    visit {
+      id
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      arrive
+      leave
+      start
+      end
+      notes {
+        nextToken
+        startedAt
+      }
+      duration
+      user_id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteVisitNote(
+  $filter: ModelSubscriptionVisitNoteFilterInput
+  $user_id: String
+) {
+  onDeleteVisitNote(filter: $filter, user_id: $user_id) {
+    id
+    notes
+    visitID
+    visit {
+      id
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      arrive
+      leave
+      start
+      end
+      notes {
+        nextToken
+        startedAt
+      }
+      duration
+      user_id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateNote(
+  $filter: ModelSubscriptionNoteFilterInput
+  $user_id: String
+) {
+  onCreateNote(filter: $filter, user_id: $user_id) {
+    id
+    notes
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateNote(
+  $filter: ModelSubscriptionNoteFilterInput
+  $user_id: String
+) {
+  onUpdateNote(filter: $filter, user_id: $user_id) {
+    id
+    notes
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteNote(
+  $filter: ModelSubscriptionNoteFilterInput
+  $user_id: String
+) {
+  onDeleteNote(filter: $filter, user_id: $user_id) {
+    id
+    notes
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateTask(
+  $filter: ModelSubscriptionTaskFilterInput
+  $user_id: String
+) {
+  onCreateTask(filter: $filter, user_id: $user_id) {
+    id
+    description
+    status
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    notes {
+      items {
+        id
+        notes
+        taskID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateTask(
+  $filter: ModelSubscriptionTaskFilterInput
+  $user_id: String
+) {
+  onUpdateTask(filter: $filter, user_id: $user_id) {
+    id
+    description
+    status
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    notes {
+      items {
+        id
+        notes
+        taskID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteTask(
+  $filter: ModelSubscriptionTaskFilterInput
+  $user_id: String
+) {
+  onDeleteTask(filter: $filter, user_id: $user_id) {
+    id
+    description
+    status
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    notes {
+      items {
+        id
+        notes
+        taskID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnCreateTaskNote(
+  $filter: ModelSubscriptionTaskNoteFilterInput
+  $user_id: String
+) {
+  onCreateTaskNote(filter: $filter, user_id: $user_id) {
+    id
+    notes
+    taskID
+    task {
+      id
+      description
+      status
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      notes {
+        nextToken
+        startedAt
+      }
+      user_id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnUpdateTaskNote(
+  $filter: ModelSubscriptionTaskNoteFilterInput
+  $user_id: String
+) {
+  onUpdateTaskNote(filter: $filter, user_id: $user_id) {
+    id
+    notes
+    taskID
+    task {
+      id
+      description
+      status
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      notes {
+        nextToken
+        startedAt
+      }
+      user_id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+subscription OnDeleteTaskNote(
+  $filter: ModelSubscriptionTaskNoteFilterInput
+  $user_id: String
+) {
+  onDeleteTaskNote(filter: $filter, user_id: $user_id) {
+    id
+    notes
+    taskID
+    task {
+      id
+      description
+      status
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      notes {
+        nextToken
+        startedAt
+      }
+      user_id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}

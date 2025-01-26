@@ -1,0 +1,1756 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateYepicPlace(
+  $input: CreateYepicPlaceInput!
+  $condition: ModelYepicPlaceConditionInput
+) {
+  createYepicPlace(input: $input, condition: $condition) {
+    id
+    user_id
+    createdAt
+    updatedAt
+    placeName
+    formattedAddress
+    latitude
+    longitude
+    uprn
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation UpdateYepicPlace(
+  $input: UpdateYepicPlaceInput!
+  $condition: ModelYepicPlaceConditionInput
+) {
+  updateYepicPlace(input: $input, condition: $condition) {
+    id
+    user_id
+    createdAt
+    updatedAt
+    placeName
+    formattedAddress
+    latitude
+    longitude
+    uprn
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation DeleteYepicPlace(
+  $input: DeleteYepicPlaceInput!
+  $condition: ModelYepicPlaceConditionInput
+) {
+  deleteYepicPlace(input: $input, condition: $condition) {
+    id
+    user_id
+    createdAt
+    updatedAt
+    placeName
+    formattedAddress
+    latitude
+    longitude
+    uprn
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation CreateYepic(
+  $input: CreateYepicInput!
+  $condition: ModelYepicConditionInput
+) {
+  createYepic(input: $input, condition: $condition) {
+    id
+    user_id
+    title
+    notes {
+      items {
+        id
+        notes
+        yepicID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    task {
+      items {
+        id
+        description
+        status
+        yepicID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    start
+    end
+    autoUpdate
+    imageIds
+    images {
+      items {
+        id
+        title
+        path
+        imageHashID
+        yepicID
+        user_id
+        exif
+        imageCreatedAt
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    placeID
+    place {
+      id
+      user_id
+      createdAt
+      updatedAt
+      placeName
+      formattedAddress
+      latitude
+      longitude
+      uprn
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    visit {
+      items {
+        id
+        yepicID
+        arrive
+        leave
+        start
+        end
+        duration
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    albumCover
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation UpdateYepic(
+  $input: UpdateYepicInput!
+  $condition: ModelYepicConditionInput
+) {
+  updateYepic(input: $input, condition: $condition) {
+    id
+    user_id
+    title
+    notes {
+      items {
+        id
+        notes
+        yepicID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    task {
+      items {
+        id
+        description
+        status
+        yepicID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    start
+    end
+    autoUpdate
+    imageIds
+    images {
+      items {
+        id
+        title
+        path
+        imageHashID
+        yepicID
+        user_id
+        exif
+        imageCreatedAt
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    placeID
+    place {
+      id
+      user_id
+      createdAt
+      updatedAt
+      placeName
+      formattedAddress
+      latitude
+      longitude
+      uprn
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    visit {
+      items {
+        id
+        yepicID
+        arrive
+        leave
+        start
+        end
+        duration
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    albumCover
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation DeleteYepic(
+  $input: DeleteYepicInput!
+  $condition: ModelYepicConditionInput
+) {
+  deleteYepic(input: $input, condition: $condition) {
+    id
+    user_id
+    title
+    notes {
+      items {
+        id
+        notes
+        yepicID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    task {
+      items {
+        id
+        description
+        status
+        yepicID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    start
+    end
+    autoUpdate
+    imageIds
+    images {
+      items {
+        id
+        title
+        path
+        imageHashID
+        yepicID
+        user_id
+        exif
+        imageCreatedAt
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    placeID
+    place {
+      id
+      user_id
+      createdAt
+      updatedAt
+      placeName
+      formattedAddress
+      latitude
+      longitude
+      uprn
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    visit {
+      items {
+        id
+        yepicID
+        arrive
+        leave
+        start
+        end
+        duration
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    albumCover
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation CreateImage(
+  $input: CreateImageInput!
+  $condition: ModelImageConditionInput
+) {
+  createImage(input: $input, condition: $condition) {
+    id
+    title
+    path
+    imageHashID
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    notes {
+      items {
+        id
+        notes
+        imageID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    exif
+    imageCreatedAt
+    location {
+      id
+      latitude
+      longitude
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation UpdateImage(
+  $input: UpdateImageInput!
+  $condition: ModelImageConditionInput
+) {
+  updateImage(input: $input, condition: $condition) {
+    id
+    title
+    path
+    imageHashID
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    notes {
+      items {
+        id
+        notes
+        imageID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    exif
+    imageCreatedAt
+    location {
+      id
+      latitude
+      longitude
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation DeleteImage(
+  $input: DeleteImageInput!
+  $condition: ModelImageConditionInput
+) {
+  deleteImage(input: $input, condition: $condition) {
+    id
+    title
+    path
+    imageHashID
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    notes {
+      items {
+        id
+        notes
+        imageID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    exif
+    imageCreatedAt
+    location {
+      id
+      latitude
+      longitude
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation CreateImageNote(
+  $input: CreateImageNoteInput!
+  $condition: ModelImageNoteConditionInput
+) {
+  createImageNote(input: $input, condition: $condition) {
+    id
+    notes
+    imageID
+    image {
+      id
+      title
+      path
+      imageHashID
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      user_id
+      notes {
+        nextToken
+        startedAt
+      }
+      exif
+      imageCreatedAt
+      location {
+        id
+        latitude
+        longitude
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation UpdateImageNote(
+  $input: UpdateImageNoteInput!
+  $condition: ModelImageNoteConditionInput
+) {
+  updateImageNote(input: $input, condition: $condition) {
+    id
+    notes
+    imageID
+    image {
+      id
+      title
+      path
+      imageHashID
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      user_id
+      notes {
+        nextToken
+        startedAt
+      }
+      exif
+      imageCreatedAt
+      location {
+        id
+        latitude
+        longitude
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation DeleteImageNote(
+  $input: DeleteImageNoteInput!
+  $condition: ModelImageNoteConditionInput
+) {
+  deleteImageNote(input: $input, condition: $condition) {
+    id
+    notes
+    imageID
+    image {
+      id
+      title
+      path
+      imageHashID
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      user_id
+      notes {
+        nextToken
+        startedAt
+      }
+      exif
+      imageCreatedAt
+      location {
+        id
+        latitude
+        longitude
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation CreateYepicVisit(
+  $input: CreateYepicVisitInput!
+  $condition: ModelYepicVisitConditionInput
+) {
+  createYepicVisit(input: $input, condition: $condition) {
+    id
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    arrive
+    leave
+    start
+    end
+    notes {
+      items {
+        id
+        notes
+        visitID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    duration
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation UpdateYepicVisit(
+  $input: UpdateYepicVisitInput!
+  $condition: ModelYepicVisitConditionInput
+) {
+  updateYepicVisit(input: $input, condition: $condition) {
+    id
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    arrive
+    leave
+    start
+    end
+    notes {
+      items {
+        id
+        notes
+        visitID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    duration
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation DeleteYepicVisit(
+  $input: DeleteYepicVisitInput!
+  $condition: ModelYepicVisitConditionInput
+) {
+  deleteYepicVisit(input: $input, condition: $condition) {
+    id
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    arrive
+    leave
+    start
+    end
+    notes {
+      items {
+        id
+        notes
+        visitID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    duration
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation CreateVisitNote(
+  $input: CreateVisitNoteInput!
+  $condition: ModelVisitNoteConditionInput
+) {
+  createVisitNote(input: $input, condition: $condition) {
+    id
+    notes
+    visitID
+    visit {
+      id
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      arrive
+      leave
+      start
+      end
+      notes {
+        nextToken
+        startedAt
+      }
+      duration
+      user_id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation UpdateVisitNote(
+  $input: UpdateVisitNoteInput!
+  $condition: ModelVisitNoteConditionInput
+) {
+  updateVisitNote(input: $input, condition: $condition) {
+    id
+    notes
+    visitID
+    visit {
+      id
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      arrive
+      leave
+      start
+      end
+      notes {
+        nextToken
+        startedAt
+      }
+      duration
+      user_id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation DeleteVisitNote(
+  $input: DeleteVisitNoteInput!
+  $condition: ModelVisitNoteConditionInput
+) {
+  deleteVisitNote(input: $input, condition: $condition) {
+    id
+    notes
+    visitID
+    visit {
+      id
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      arrive
+      leave
+      start
+      end
+      notes {
+        nextToken
+        startedAt
+      }
+      duration
+      user_id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation CreateNote(
+  $input: CreateNoteInput!
+  $condition: ModelNoteConditionInput
+) {
+  createNote(input: $input, condition: $condition) {
+    id
+    notes
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation UpdateNote(
+  $input: UpdateNoteInput!
+  $condition: ModelNoteConditionInput
+) {
+  updateNote(input: $input, condition: $condition) {
+    id
+    notes
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation DeleteNote(
+  $input: DeleteNoteInput!
+  $condition: ModelNoteConditionInput
+) {
+  deleteNote(input: $input, condition: $condition) {
+    id
+    notes
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation CreateTask(
+  $input: CreateTaskInput!
+  $condition: ModelTaskConditionInput
+) {
+  createTask(input: $input, condition: $condition) {
+    id
+    description
+    status
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    notes {
+      items {
+        id
+        notes
+        taskID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation UpdateTask(
+  $input: UpdateTaskInput!
+  $condition: ModelTaskConditionInput
+) {
+  updateTask(input: $input, condition: $condition) {
+    id
+    description
+    status
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    notes {
+      items {
+        id
+        notes
+        taskID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation DeleteTask(
+  $input: DeleteTaskInput!
+  $condition: ModelTaskConditionInput
+) {
+  deleteTask(input: $input, condition: $condition) {
+    id
+    description
+    status
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    notes {
+      items {
+        id
+        notes
+        taskID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation CreateTaskNote(
+  $input: CreateTaskNoteInput!
+  $condition: ModelTaskNoteConditionInput
+) {
+  createTaskNote(input: $input, condition: $condition) {
+    id
+    notes
+    taskID
+    task {
+      id
+      description
+      status
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      notes {
+        nextToken
+        startedAt
+      }
+      user_id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation UpdateTaskNote(
+  $input: UpdateTaskNoteInput!
+  $condition: ModelTaskNoteConditionInput
+) {
+  updateTaskNote(input: $input, condition: $condition) {
+    id
+    notes
+    taskID
+    task {
+      id
+      description
+      status
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      notes {
+        nextToken
+        startedAt
+      }
+      user_id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+mutation DeleteTaskNote(
+  $input: DeleteTaskNoteInput!
+  $condition: ModelTaskNoteConditionInput
+) {
+  deleteTaskNote(input: $input, condition: $condition) {
+    id
+    notes
+    taskID
+    task {
+      id
+      description
+      status
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      notes {
+        nextToken
+        startedAt
+      }
+      user_id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}

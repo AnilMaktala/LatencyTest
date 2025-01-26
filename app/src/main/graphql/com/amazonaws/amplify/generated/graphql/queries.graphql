@@ -1,0 +1,1379 @@
+# this is an auto generated file. This will be overwritten
+query GetYepicPlace($id: ID!) {
+  getYepicPlace(id: $id) {
+    id
+    user_id
+    createdAt
+    updatedAt
+    placeName
+    formattedAddress
+    latitude
+    longitude
+    uprn
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+query ListYepicPlaces(
+  $filter: ModelYepicPlaceFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listYepicPlaces(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      user_id
+      createdAt
+      updatedAt
+      placeName
+      formattedAddress
+      latitude
+      longitude
+      uprn
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncYepicPlaces(
+  $filter: ModelYepicPlaceFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncYepicPlaces(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      user_id
+      createdAt
+      updatedAt
+      placeName
+      formattedAddress
+      latitude
+      longitude
+      uprn
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SearchYepicPlaces(
+  $filter: SearchableYepicPlaceFilterInput
+  $sort: [SearchableYepicPlaceSortInput]
+  $limit: Int
+  $nextToken: String
+  $from: Int
+  $aggregates: [SearchableYepicPlaceAggregationInput]
+) {
+  searchYepicPlaces(
+    filter: $filter
+    sort: $sort
+    limit: $limit
+    nextToken: $nextToken
+    from: $from
+    aggregates: $aggregates
+  ) {
+    items {
+      id
+      user_id
+      createdAt
+      updatedAt
+      placeName
+      formattedAddress
+      latitude
+      longitude
+      uprn
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    total
+    aggregateItems {
+      name
+      result {
+        ... on SearchableAggregateScalarResult {
+          value
+        }
+        ... on SearchableAggregateBucketResult {
+          buckets {
+            key
+            doc_count
+          }
+        }
+      }
+    }
+  }
+}
+query GetYepic($id: ID!) {
+  getYepic(id: $id) {
+    id
+    user_id
+    title
+    notes {
+      items {
+        id
+        notes
+        yepicID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    task {
+      items {
+        id
+        description
+        status
+        yepicID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    start
+    end
+    autoUpdate
+    imageIds
+    images {
+      items {
+        id
+        title
+        path
+        imageHashID
+        yepicID
+        user_id
+        exif
+        imageCreatedAt
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    placeID
+    place {
+      id
+      user_id
+      createdAt
+      updatedAt
+      placeName
+      formattedAddress
+      latitude
+      longitude
+      uprn
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    visit {
+      items {
+        id
+        yepicID
+        arrive
+        leave
+        start
+        end
+        duration
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    createdAt
+    updatedAt
+    albumCover
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+query ListYepics(
+  $filter: ModelYepicFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listYepics(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncYepics(
+  $filter: ModelYepicFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncYepics(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetImage($id: ID!) {
+  getImage(id: $id) {
+    id
+    title
+    path
+    imageHashID
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    notes {
+      items {
+        id
+        notes
+        imageID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    exif
+    imageCreatedAt
+    location {
+      id
+      latitude
+      longitude
+    }
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+query ListImages(
+  $filter: ModelImageFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listImages(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      title
+      path
+      imageHashID
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      user_id
+      notes {
+        nextToken
+        startedAt
+      }
+      exif
+      imageCreatedAt
+      location {
+        id
+        latitude
+        longitude
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncImages(
+  $filter: ModelImageFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncImages(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      title
+      path
+      imageHashID
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      user_id
+      notes {
+        nextToken
+        startedAt
+      }
+      exif
+      imageCreatedAt
+      location {
+        id
+        latitude
+        longitude
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetImageNote($id: ID!) {
+  getImageNote(id: $id) {
+    id
+    notes
+    imageID
+    image {
+      id
+      title
+      path
+      imageHashID
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      user_id
+      notes {
+        nextToken
+        startedAt
+      }
+      exif
+      imageCreatedAt
+      location {
+        id
+        latitude
+        longitude
+      }
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+query ListImageNotes(
+  $filter: ModelImageNoteFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listImageNotes(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      notes
+      imageID
+      image {
+        id
+        title
+        path
+        imageHashID
+        yepicID
+        user_id
+        exif
+        imageCreatedAt
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      user_id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncImageNotes(
+  $filter: ModelImageNoteFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncImageNotes(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      notes
+      imageID
+      image {
+        id
+        title
+        path
+        imageHashID
+        yepicID
+        user_id
+        exif
+        imageCreatedAt
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      user_id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetYepicVisit($id: ID!) {
+  getYepicVisit(id: $id) {
+    id
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    arrive
+    leave
+    start
+    end
+    notes {
+      items {
+        id
+        notes
+        visitID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    duration
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+query ListYepicVisits(
+  $filter: ModelYepicVisitFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listYepicVisits(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      arrive
+      leave
+      start
+      end
+      notes {
+        nextToken
+        startedAt
+      }
+      duration
+      user_id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncYepicVisits(
+  $filter: ModelYepicVisitFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncYepicVisits(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      arrive
+      leave
+      start
+      end
+      notes {
+        nextToken
+        startedAt
+      }
+      duration
+      user_id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetVisitNote($id: ID!) {
+  getVisitNote(id: $id) {
+    id
+    notes
+    visitID
+    visit {
+      id
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      arrive
+      leave
+      start
+      end
+      notes {
+        nextToken
+        startedAt
+      }
+      duration
+      user_id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+query ListVisitNotes(
+  $filter: ModelVisitNoteFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listVisitNotes(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      notes
+      visitID
+      visit {
+        id
+        yepicID
+        arrive
+        leave
+        start
+        end
+        duration
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      user_id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncVisitNotes(
+  $filter: ModelVisitNoteFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncVisitNotes(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      notes
+      visitID
+      visit {
+        id
+        yepicID
+        arrive
+        leave
+        start
+        end
+        duration
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      user_id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetNote($id: ID!) {
+  getNote(id: $id) {
+    id
+    notes
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+query ListNotes(
+  $filter: ModelNoteFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listNotes(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      notes
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      user_id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncNotes(
+  $filter: ModelNoteFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncNotes(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      notes
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      user_id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetTask($id: ID!) {
+  getTask(id: $id) {
+    id
+    description
+    status
+    yepicID
+    yepic {
+      id
+      user_id
+      title
+      notes {
+        nextToken
+        startedAt
+      }
+      task {
+        nextToken
+        startedAt
+      }
+      start
+      end
+      autoUpdate
+      imageIds
+      images {
+        nextToken
+        startedAt
+      }
+      placeID
+      place {
+        id
+        user_id
+        createdAt
+        updatedAt
+        placeName
+        formattedAddress
+        latitude
+        longitude
+        uprn
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      visit {
+        nextToken
+        startedAt
+      }
+      createdAt
+      updatedAt
+      albumCover
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    notes {
+      items {
+        id
+        notes
+        taskID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      nextToken
+      startedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+query ListTasks(
+  $filter: ModelTaskFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listTasks(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      description
+      status
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      notes {
+        nextToken
+        startedAt
+      }
+      user_id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncTasks(
+  $filter: ModelTaskFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncTasks(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      description
+      status
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      notes {
+        nextToken
+        startedAt
+      }
+      user_id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query GetTaskNote($id: ID!) {
+  getTaskNote(id: $id) {
+    id
+    notes
+    taskID
+    task {
+      id
+      description
+      status
+      yepicID
+      yepic {
+        id
+        user_id
+        title
+        start
+        end
+        autoUpdate
+        imageIds
+        placeID
+        createdAt
+        updatedAt
+        albumCover
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      notes {
+        nextToken
+        startedAt
+      }
+      user_id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    user_id
+    createdAt
+    updatedAt
+    _version
+    _deleted
+    _lastChangedAt
+  }
+}
+query ListTaskNotes(
+  $filter: ModelTaskNoteFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listTaskNotes(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      notes
+      taskID
+      task {
+        id
+        description
+        status
+        yepicID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      user_id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}
+query SyncTaskNotes(
+  $filter: ModelTaskNoteFilterInput
+  $limit: Int
+  $nextToken: String
+  $lastSync: AWSTimestamp
+) {
+  syncTaskNotes(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+    lastSync: $lastSync
+  ) {
+    items {
+      id
+      notes
+      taskID
+      task {
+        id
+        description
+        status
+        yepicID
+        user_id
+        createdAt
+        updatedAt
+        _version
+        _deleted
+        _lastChangedAt
+      }
+      user_id
+      createdAt
+      updatedAt
+      _version
+      _deleted
+      _lastChangedAt
+    }
+    nextToken
+    startedAt
+  }
+}

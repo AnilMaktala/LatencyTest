@@ -1,0 +1,24 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-latencytest2-dev-202834-authRole",
+      "UnauthRoleArn": "arn:aws:iam::932080214319:role/amplify-latencytest2-dev-202834-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::932080214319:role/amplify-latencytest2-dev-202834-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-latencytest2-dev-202834-deployment",
+      "UnauthRoleName": "amplify-latencytest2-dev-202834-unauthRole",
+      "StackName": "amplify-latencytest2-dev-202834",
+      "StackId": "arn:aws:cloudformation:us-east-1:932080214319:stack/amplify-latencytest2-dev-202834/4c30d8a0-558e-11ed-8f72-0ebcc82b0dc7",
+      "AmplifyAppId": "d9g0y277b19os"
+    },
+    "categories": {
+      "auth": {
+        "latencytest25b343474": {},
+        "userPoolGroups": {}
+      },
+      "api": {
+        "latencytest2": {}
+      }
+    }
+  }
+}
